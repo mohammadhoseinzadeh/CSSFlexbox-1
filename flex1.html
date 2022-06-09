@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex1</title>
+    <style>
+        @media(min-width:768px){
+            .container-1{
+            display:flex;
+           }
+            .container-2{
+            display:flex;
+            /* justify-content:space-between;  */
+            }
+        }
+        .container-3{
+            display:flex; 
+            flex-wrap:wrap;
+        }
+
+        
+        .container-1 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+            background-color: aqua;
+            
+        }
+        .container-2 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+            background-color: aqua;
+            
+        }
+        .container-3 div{
+            border: 1px #ccc solid;
+            padding: 10px;
+            background-color: aqua;
+            
+        }
+        
+        /* .container-1 >div:nth-child(odd){
+            background-color: blueviolet;
+        }
+
+        .container-2 >div:nth-child(odd){
+            background-color: blueviolet;
+        } */
+
+        .b1{
+            flex: 2;
+            order: 2;
+
+        }
+        .b2{
+            flex: 1;
+            order: 1;
+        }
+        .b3{
+            flex: 1;
+            order: 3;
+        }
+        .b4{
+            width:27%;
+        }
+        .b5{
+            width: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="b1">
+            <h3>BOX1</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b2">
+            <h3>BOX2</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b3">
+            <h3>BOX3</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="b4">
+            <h3>BOX4</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b4">
+            <h3>BOX5</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b4">
+            <h3>BOX6</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="b5">
+            <h3>BOX7</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b5">
+            <h3>BOX8</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b5">
+            <h3>BOX9</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b5">
+            <h3>BOX10</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b5">
+            <h3>BOX11</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+        <div class="b5">
+            <h3>BOX612</h3>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ea!</P>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
